@@ -1,0 +1,13 @@
+name: Node.js CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: EditorConfig lint
+      uses: greut/eclint-action@v0.2.5
